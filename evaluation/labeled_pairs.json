@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "chunk_a_id": 19,
+    "chunk_b_id": 19,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: schema and instance definitions."
+  },
+  {
+    "id": 2,
+    "chunk_a_id": 55,
+    "chunk_b_id": 55,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: Chapter 2 schema vs instance discussion."
+  },
+  {
+    "id": 3,
+    "chunk_a_id": 57,
+    "chunk_b_id": 57,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: superkey introduction."
+  },
+  {
+    "id": 4,
+    "chunk_a_id": 58,
+    "chunk_b_id": 58,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: candidate key and primary key discussion."
+  },
+  {
+    "id": 5,
+    "chunk_a_id": 82,
+    "chunk_b_id": 82,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: sparse index definition."
+  },
+  {
+    "id": 6,
+    "chunk_a_id": 83,
+    "chunk_b_id": 83,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: dense clustering example on dept_name."
+  },
+  {
+    "id": 7,
+    "chunk_a_id": 91,
+    "chunk_b_id": 91,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: secondary indices must be dense."
+  },
+  {
+    "id": 8,
+    "chunk_a_id": 97,
+    "chunk_b_id": 97,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: B+ tree leaf chaining and sequential processing."
+  },
+  {
+    "id": 9,
+    "chunk_a_id": 100,
+    "chunk_b_id": 100,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: B+ tree point lookup."
+  },
+  {
+    "id": 10,
+    "chunk_a_id": 158,
+    "chunk_b_id": 158,
+    "label": "exact_duplicate",
+    "notes": "Self-pair sanity check: spatial and temporal indexing introduction."
+  },
+  {
+    "id": 11,
+    "chunk_a_id": 19,
+    "chunk_b_id": 55,
+    "label": "near_duplicate",
+    "notes": "Both explain the distinction between database schema and database instance."
+  },
+  {
+    "id": 12,
+    "chunk_a_id": 15,
+    "chunk_b_id": 16,
+    "label": "near_duplicate",
+    "notes": "Both discuss the three levels of data abstraction and view/logical/physical levels."
+  },
+  {
+    "id": 13,
+    "chunk_a_id": 57,
+    "chunk_b_id": 58,
+    "label": "near_duplicate",
+    "notes": "Both cover keys: superkey, candidate key, and primary key."
+  },
+  {
+    "id": 14,
+    "chunk_a_id": 60,
+    "chunk_b_id": 61,
+    "label": "near_duplicate",
+    "notes": "Both are on referential integrity and foreign-key style constraints."
+  },
+  {
+    "id": 15,
+    "chunk_a_id": 78,
+    "chunk_b_id": 79,
+    "label": "near_duplicate",
+    "notes": "Both introduce indexing basics and high-level index categories."
+  },
+  {
+    "id": 16,
+    "chunk_a_id": 82,
+    "chunk_b_id": 83,
+    "label": "near_duplicate",
+    "notes": "Both are about dense/sparse ordered indices and related clustering examples."
+  },
+  {
+    "id": 17,
+    "chunk_a_id": 82,
+    "chunk_b_id": 91,
+    "label": "near_duplicate",
+    "notes": "Both discuss when sparse indices are possible and when dense indices are required."
+  },
+  {
+    "id": 18,
+    "chunk_a_id": 84,
+    "chunk_b_id": 85,
+    "label": "near_duplicate",
+    "notes": "Both discuss multilevel indices and lookup cost trade-offs."
+  },
+  {
+    "id": 19,
+    "chunk_a_id": 96,
+    "chunk_b_id": 97,
+    "label": "near_duplicate",
+    "notes": "Both describe B+ tree structure, especially leaf/nonleaf organization and leaf chaining."
+  },
+  {
+    "id": 20,
+    "chunk_a_id": 100,
+    "chunk_b_id": 101,
+    "label": "near_duplicate",
+    "notes": "Both explain B+ tree query processing, including point lookup and range queries."
+  },
+  {
+    "id": 21,
+    "chunk_a_id": 0,
+    "chunk_b_id": 82,
+    "label": "non_duplicate",
+    "notes": "Database applications vs sparse index definition."
+  },
+  {
+    "id": 22,
+    "chunk_a_id": 19,
+    "chunk_b_id": 97,
+    "label": "non_duplicate",
+    "notes": "Schema/instance concepts vs B+ tree leaf structure."
+  },
+  {
+    "id": 23,
+    "chunk_a_id": 57,
+    "chunk_b_id": 135,
+    "label": "non_duplicate",
+    "notes": "Relational key concepts vs hash indices."
+  },
+  {
+    "id": 24,
+    "chunk_a_id": 35,
+    "chunk_b_id": 106,
+    "label": "non_duplicate",
+    "notes": "Query processor components vs B+ tree insertion example."
+  },
+  {
+    "id": 25,
+    "chunk_a_id": 36,
+    "chunk_b_id": 79,
+    "label": "non_duplicate",
+    "notes": "Transaction management vs index type overview."
+  },
+  {
+    "id": 26,
+    "chunk_a_id": 24,
+    "chunk_b_id": 91,
+    "label": "non_duplicate",
+    "notes": "SQL DDL table definition vs secondary index density requirements."
+  },
+  {
+    "id": 27,
+    "chunk_a_id": 55,
+    "chunk_b_id": 158,
+    "label": "non_duplicate",
+    "notes": "Database schema concepts vs spatial/temporal indexing."
+  },
+  {
+    "id": 28,
+    "chunk_a_id": 65,
+    "chunk_b_id": 148,
+    "label": "non_duplicate",
+    "notes": "Relational algebra select operation vs LSM trees."
+  },
+  {
+    "id": 29,
+    "chunk_a_id": 43,
+    "chunk_b_id": 160,
+    "label": "non_duplicate",
+    "notes": "DBA responsibilities vs spatial index tree structures."
+  },
+  {
+    "id": 30,
+    "chunk_a_id": 31,
+    "chunk_b_id": 164,
+    "label": "non_duplicate",
+    "notes": "Database engine architecture vs temporal indexing."
+  }
+]

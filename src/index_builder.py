@@ -21,11 +21,11 @@ from src.preprocessing.extraction import extract_sections_from_markdown
 
 # ----- runtime parallelism knobs (avoid oversubscription) -----
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "4"
+os.environ["OPENBLAS_NUM_THREADS"] = "4"
+os.environ["MKL_NUM_THREADS"] = "4"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "4"
+os.environ["NUMEXPR_NUM_THREADS"] = "4"
 
 DEFAULT_EXCLUSION_KEYWORDS = ['questions', 'exercises', 'summary', 'references']
 
@@ -53,6 +53,8 @@ def build_index(
         - {prefix}_meta.pkl
         - {prefix}_page_to_chunk_map.json
     """
+    print("DEBUG: entered build_index()")
+    print(f"DEBUG: use_multiprocessing = {use_multiprocessing}")
     all_chunks: List[str] = []
     sources: List[str] = []
     metadata: List[Dict] = []
@@ -151,12 +153,12 @@ def build_index(
 
     if use_multiprocessing:
         print("Starting multi-process pool for embeddings...")
-        pool = embedder.start_multi_process_pool(workers=4)
+        pool = embedder.start_multi_process_pool()
         try:
             embeddings = embedder.encode_multi_process(
                 all_chunks,
                 pool,
-                batch_size=4,
+                batch_size=8,
             )
         finally:
             embedder.stop_multi_process_pool(pool)

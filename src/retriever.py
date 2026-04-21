@@ -21,6 +21,7 @@ from src.embedder import CachedEmbedder
 
 from src.config import RAGConfig
 from src.index_builder import preprocess_for_bm25
+from src.retrieval_dedup import deduplicate_retrieved_chunk_indices
 
 
 # -------------------------- Embedder cache ------------------------------
@@ -74,7 +75,25 @@ def get_page_numbers(chunk_indices: list[int], metadata: list[dict]) -> dict[int
 # -------------------------- Filtering logic -----------------------------
 
 def filter_retrieved_chunks(cfg: RAGConfig, chunks, ordered):
-    topk_idxs = ordered[:cfg.top_k]
+    # topk_idxs = ordered[:cfg.top_k]
+    original_topk = ordered[:cfg.top_k]
+
+    print("\n=== Original top-k previews ===")
+    for idx in original_topk:
+        preview = chunks[idx][:160].replace("\n", " ")
+        print(f"{idx}: {preview}")
+
+    topk_idxs = deduplicate_retrieved_chunk_indices(
+        chunks=chunks,
+        ordered=ordered,
+        top_k=cfg.top_k,
+        threshold=0.1,
+        pool_multiplier=5,
+    )
+
+    print("Original top-k indices:", original_topk)
+    print("Deduplicated top-k indices:", topk_idxs)
+
     return topk_idxs
 
 # -------------------------- Retrieval core ------------------------------

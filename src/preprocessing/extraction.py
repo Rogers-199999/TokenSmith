@@ -7,6 +7,36 @@ from docling.datamodel.pipeline_options import PdfPipelineOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption, InputFormat
 from docling.backend.docling_parse_v2_backend import DoclingParseV2DocumentBackend
 
+from tempfile import TemporaryDirectory
+from pypdf import PdfReader, PdfWriter
+
+def split_pdf_into_batches(input_file_path: str, batch_size: int = 20):
+    """
+    Split a PDF into temporary batch PDFs, each containing at most `batch_size` pages.
+
+    Yields:
+        (temp_pdf_path, start_page, end_page)
+        where start_page/end_page are 1-based page numbers in the original PDF.
+    """
+    reader = PdfReader(input_file_path)
+    total_pages = len(reader.pages)
+
+    with TemporaryDirectory() as tmpdir:
+        tmpdir_path = Path(tmpdir)
+
+        for start in range(0, total_pages, batch_size):
+            end = min(start + batch_size, total_pages)
+
+            writer = PdfWriter()
+            for i in range(start, end):
+                writer.add_page(reader.pages[i])
+
+            batch_pdf_path = tmpdir_path / f"batch_{start+1}_{end}.pdf"
+            with open(batch_pdf_path, "wb") as f:
+                writer.write(f)
+
+            yield str(batch_pdf_path), start + 1, end
+
 def extract_sections_from_markdown(
     file_path: str,
     exclusion_keywords: List[str] = None
@@ -167,51 +197,71 @@ def extract_index_with_range_expansion(text_content):
     # Convert the dictionary to a nicely formatted JSON string
     return json.dumps(index_data, indent=2)
 
-def convert_and_save_with_page_numbers(input_file_path, output_file_path):
+def convert_and_save_with_page_numbers(input_file_path, output_file_path, batch_size: int = 20):
     """
-    Converts a document to Markdown, iterating page by page
-    to insert a custom footer with the page number after each page,
-    and saves the result to a file.
-    
+    Converts a document to Markdown in small PDF batches to reduce memory usage.
+    Preserves original page numbering in the final combined markdown.
+
     Args:
-        input_file_path (str): The path to the source file (e.g., "/path/to/file.pdf").
-        output_file_path (str): The path to the destination .md file.
+        input_file_path (str): Path to source PDF.
+        output_file_path (str): Path to destination markdown file.
+        batch_size (int): Number of PDF pages to process per batch.
     """
-    
     source = Path(input_file_path)
     if not source.exists():
         print(f"Error: Input file not found at {input_file_path}", file=sys.stderr)
         return
 
-    # Disable OCR and table structure extraction for faster processing
     pipeline_options = PdfPipelineOptions()
     pipeline_options.do_ocr = False
     pipeline_options.do_table_structure = False
 
     converter = DocumentConverter(
-    format_options={
-            InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_options, backend=DoclingParseV2DocumentBackend)
+        format_options={
+            InputFormat.PDF: PdfFormatOption(
+                pipeline_options=pipeline_options,
+                backend=DoclingParseV2DocumentBackend
+            )
         }
     )
-    
+
+    final_parts = []
+
     try:
-        # Convert the entire document once
-        result = converter.convert(source)
+        for batch_pdf_path, global_start_page, global_end_page in split_pdf_into_batches(
+            input_file_path, batch_size=batch_size
+        ):
+            print(
+                f"Processing pages {global_start_page}-{global_end_page} "
+                f"from '{input_file_path}'..."
+            )
+
+            try:
+                result = converter.convert(Path(batch_pdf_path))
+            except Exception as e:
+                print(
+                    f"Error during conversion of pages {global_start_page}-{global_end_page}: {e}",
+                    file=sys.stderr
+                )
+                continue
+
+            doc = result.document
+            num_pages_in_batch = len(doc.pages)
+
+            for local_page_no in range(1, num_pages_in_batch + 1):
+                global_page_no = global_start_page + local_page_no - 1
+                page_md = doc.export_to_markdown(page_no=local_page_no)
+                final_parts.append(page_md)
+
+                # add page marker after each page
+                final_parts.append(f"\n\n--- Page {global_page_no} ---\n\n")
+
     except Exception as e:
-        print(f"Error during conversion: {e}", file=sys.stderr)
+        print(f"Unexpected error while processing batches: {e}", file=sys.stderr)
         return
-        
-    doc = result.document
 
-    num_pages = len(doc.pages)
-    
-    # Extract markdown and append page number footer except for the last page
-    final_text = "".join(
-        doc.export_to_markdown(page_no=i) + (f"\n\n--- Page {i} ---\n\n" if i < num_pages else "")
-        for i in range(1, num_pages + 1)
-    )
+    final_text = "".join(final_parts)
 
-    # Write the combined markdown string to the output file
     try:
         with open(output_file_path, "w", encoding="utf-8") as f:
             f.write(final_text)
@@ -261,7 +311,8 @@ def main():
         output_md = Path("data") / f"{pdf_name}--extracted_markdown.md"
 
         print(f"Converting '{pdf_path}' to '{output_md}'...")
-        convert_and_save_with_page_numbers(str(pdf_path), str(output_md))
+        # convert_and_save_with_page_numbers(str(pdf_path), str(output_md))
+        convert_and_save_with_page_numbers(str(pdf_path), str(output_md), batch_size=10)
 
         markdown_files.append(output_md)
 

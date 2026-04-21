@@ -1,0 +1,1630 @@
+[
+  {
+    "chunk_id": 0,
+    "section": "Section 1.1 Database-System Applications",
+    "section_path": "Chapter 1 Section 1.1 Database-System Applications",
+    "page_numbers": [
+      2,
+      3
+    ],
+    "preview": "Page 2 The earliest database systems arose in the 1960s in response to the computerized management of commercial data. Those earlier applications were relatively simple compared to modern database applications. Modern applications include highly sophisticated, worldwide enterprises. All database app"
+  },
+  {
+    "chunk_id": 1,
+    "section": "Section 1.1 Database-System Applications",
+    "section_path": "Chapter 1 Section 1.1 Database-System Applications",
+    "page_numbers": [
+      3
+    ],
+    "preview": ". Information of this sort has a standard, repeating structure and is representative of the type of database applications that go back to the 1960s. Contrast this simple university database application with a social-networking site. Users of the site post varying types of information about themselve"
+  },
+  {
+    "chunk_id": 2,
+    "section": "Section 1.1 Database-System Applications",
+    "section_path": "Chapter 1 Section 1.1 Database-System Applications",
+    "page_numbers": [
+      3,
+      4,
+      5
+    ],
+    "preview": ". By providing a high level of abstraction, a database system makes it possible for an enterprise to combine data of various types into a unified repository of the information needed to run the enterprise.  Here are some representative applications: ## Enterprise Information - Sales: For customer, p"
+  },
+  {
+    "chunk_id": 3,
+    "section": "Section 1.1 Database-System Applications",
+    "section_path": "Chapter 1 Section 1.1 Database-System Applications",
+    "page_numbers": [
+      5,
+      6
+    ],
+    "preview": ". - Web-based services - Social-media: For keeping records of users, connections between users (such as friend/follows information), posts made by users, rating/like information about posts, etc. - Online retailers: For keeping records of sales data and orders as for any retailer, but also for track"
+  },
+  {
+    "chunk_id": 4,
+    "section": "Section 1.1 Database-System Applications",
+    "section_path": "Chapter 1 Section 1.1 Database-System Applications",
+    "page_numbers": [
+      6,
+      7
+    ],
+    "preview": ". Whereas once bank customers had to interact with a teller for every transaction, automated-teller machines (ATMs) allowed direct customer interaction. T oday, virtually every enterprise employs web applications or mobile applications to allow its customers to interact directly with the enterprise'"
+  },
+  {
+    "chunk_id": 5,
+    "section": "Section 1.1 Database-System Applications",
+    "section_path": "Chapter 1 Section 1.1 Database-System Applications",
+    "page_numbers": [
+      7,
+      8
+    ],
+    "preview": ". - The second mode is to support data analytics , that is, the processing of data to draw conclusions, and infer rules or decision procedures, which are then used to drive business decisions. Page 5 For example, banks need to decide whether to give a loan to a loan applicant, online advertisers nee"
+  },
+  {
+    "chunk_id": 6,
+    "section": "Section 1.2 Purpose of Database Systems",
+    "section_path": "Chapter 1 Section 1.2 Purpose of Database Systems",
+    "page_numbers": [
+      8,
+      9
+    ],
+    "preview": "To understand the purpose of database systems, consider part of a university organization that, among other data, keeps information about all instructors, students, departments, and course offerings. One way to keep the information on a computer is to store it in operating-system files. T o allow us"
+  },
+  {
+    "chunk_id": 7,
+    "section": "Section 1.2 Purpose of Database Systems",
+    "section_path": "Chapter 1 Section 1.2 Purpose of Database Systems",
+    "page_numbers": [
+      9,
+      10
+    ],
+    "preview": ". Keeping organizational information in a file-processing system has a number of major disadvantages:  - Page 6 Data redundancy and inconsistency. Since different programmers create the files and application programs over a long period, the various files are likely to have different structures, and "
+  },
+  {
+    "chunk_id": 8,
+    "section": "Section 1.2 Purpose of Database Systems",
+    "section_path": "Chapter 1 Section 1.2 Purpose of Database Systems",
+    "page_numbers": [
+      10,
+      11
+    ],
+    "preview": ". Both alternatives are obviously unsatisfactory. Suppose that such a program is written and that, several days later, the same clerk needs to trim that list to include only those students who have taken at least 60 credit hours. As expected, a program to generate such a list does not exist. Again, "
+  },
+  {
+    "chunk_id": 9,
+    "section": "Section 1.2 Purpose of Database Systems",
+    "section_path": "Chapter 1 Section 1.2 Purpose of Database Systems",
+    "page_numbers": [
+      11,
+      12
+    ],
+    "preview": ". If a system failure occurs during the execution of the program, it is possible that the $500 was removed from the balance of account A but was not credited to the balance of account B , resulting in an inconsistent database state. Clearly, it is essential to database consistency that either both t"
+  },
+  {
+    "chunk_id": 10,
+    "section": "Section 1.2 Purpose of Database Systems",
+    "section_path": "Chapter 1 Section 1.2 Purpose of Database Systems",
+    "page_numbers": [
+      12,
+      13
+    ],
+    "preview": ". T o  - guard against this possibility, the system must maintain some form of supervision. But supervision is difficult to provide because data may be accessed by many different application programs that have not been coordinated previously. - As another example, suppose a registration program main"
+  },
+  {
+    "chunk_id": 11,
+    "section": "Section 1.3 View of Data",
+    "section_path": "Chapter 1 Section 1.3 View of Data",
+    "page_numbers": [
+      13
+    ],
+    "preview": "A database system is a collection of interrelated data and a set of programs that allow users to access and modify these data. A major purpose of a database system is to provide users with an abstract view of the data. That is, the system hides certain details of how the data are stored and maintain"
+  },
+  {
+    "chunk_id": 12,
+    "section": "Section 1.3.1 Data Models",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.1 Data Models",
+    "page_numbers": [
+      13,
+      14
+    ],
+    "preview": "Underlying the structure of a database is the data model : a collection of conceptual tools for describing data, data relationships, data semantics, and consistency constraints. There are a number of different data models that we shall cover in the text. The data models can be classified into four d"
+  },
+  {
+    "chunk_id": 13,
+    "section": "Section 1.3.1 Data Models",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.1 Data Models",
+    "page_numbers": [
+      14,
+      15
+    ],
+    "preview": ". JSON and Extensible Markup Language ( XML ) are widely used semi-structured data representations. Semistructured data models are explored in detail in Chapter 8. - Page 9 Object-Based Data Model . Object-oriented programming (especially in Java, C++, or C#) has become the dominant software-develop"
+  },
+  {
+    "chunk_id": 14,
+    "section": "Section 1.3.2 Relational Data Model",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.2 Relational Data Model",
+    "page_numbers": [
+      15,
+      16
+    ],
+    "preview": "In the relational model, data are represented in the form of tables. Each table has multiple columns, and each column has a unique name. Each row of the table represents one piece of information. Figure 1.1 presents a sample relational database comprising two tables: one shows details of university "
+  },
+  {
+    "chunk_id": 15,
+    "section": "Section 1.3.3 Data Abstraction",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.3 Data Abstraction",
+    "page_numbers": [
+      17,
+      18
+    ],
+    "preview": "For the system to be usable, it must retrieve data efficiently. The need for efficiency has led database system developers to use complex data structures to represent data in the database. Since many database-system users are not computer trained, developers hide the complexity from users through se"
+  },
+  {
+    "chunk_id": 16,
+    "section": "Section 1.3.3 Data Abstraction",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.3 Data Abstraction",
+    "page_numbers": [
+      18,
+      19
+    ],
+    "preview": ". The view level of abstraction exists to simplify their interaction with the system. The system may provide many views for the same database. Figure 1.2 shows the relationship among the three levels of abstraction. ## Figure 1.2 The three levels of data abstraction. Page 11 An important feature of "
+  },
+  {
+    "chunk_id": 17,
+    "section": "Section 1.3.3 Data Abstraction",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.3 Data Abstraction",
+    "page_numbers": [
+      19
+    ],
+    "preview": ". Page 12 At the physical level, an instructor , department , or student record can be described as a block of consecutive bytes. The compiler hides this level of detail from programmers. Similarly, the database system hides many of the lowest-level storage details from database programmers. Databas"
+  },
+  {
+    "chunk_id": 18,
+    "section": "Section 1.3.3 Data Abstraction",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.3 Data Abstraction",
+    "page_numbers": [
+      19
+    ],
+    "preview": ". At the view level, several views of the database are defined, and a database user sees some or all of these views. In addition to hiding details of the logical level of the database, the views also provide a security mechanism to prevent users from accessing certain parts of the database. For exam"
+  },
+  {
+    "chunk_id": 19,
+    "section": "Section 1.3.4 Instances and Schemas",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.4 Instances and Schemas",
+    "page_numbers": [
+      20,
+      21
+    ],
+    "preview": "Databases change over time as information is inserted and deleted. The collection of information stored in the database at a particular moment is called an instance of the database. The overall design of the database is called the database schema . The concept of database schemas and instances can b"
+  },
+  {
+    "chunk_id": 20,
+    "section": "Section 1.3.4 Instances and Schemas",
+    "section_path": "Chapter 1 Section 1.3 View of Data Section 1.3.4 Instances and Schemas",
+    "page_numbers": [
+      21
+    ],
+    "preview": ". For example, suppose we store the department budget as an attribute of the instructor record. Then, whenever the value of the budget for a department (say the Physics department) changes, that change must be reflected in the records of all instructors associated with the department. In Chapter 7, "
+  },
+  {
+    "chunk_id": 21,
+    "section": "Section 1.4 Database Languages",
+    "section_path": "Chapter 1 Section 1.4 Database Languages",
+    "page_numbers": [
+      22
+    ],
+    "preview": "A database system provides a data-definition language ( DDL ) to specify the database schema and a datamanipulation language ( DML ) to express database queries and updates. In practice, the data-definition and data-manipulation languages are not two separate languages; instead they simply form part"
+  },
+  {
+    "chunk_id": 22,
+    "section": "Section 1.4.1 Data-Definition Language",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.1 Data-Definition Language",
+    "page_numbers": [
+      22,
+      23
+    ],
+    "preview": "We specify a database schema by a set of definitions expressed by a special language called a data-definition language (DDL). The DDL is also used to specify additional properties of the data. We specify the storage structure and access methods used by the database system by a set of statements in a"
+  },
+  {
+    "chunk_id": 23,
+    "section": "Section 1.4.1 Data-Definition Language",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.1 Data-Definition Language",
+    "page_numbers": [
+      23
+    ],
+    "preview": ". For example, the department listed for each course must be one that actually exists in the university. More precisely, the dept\\_name value in a course record must appear in the dept\\_name attribute of some record of the department relation. Database modifications can cause violations of referenti"
+  },
+  {
+    "chunk_id": 24,
+    "section": "Section 1.4.2 The SQL Data-Definition Language",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.2 The SQL Data-Definition Language",
+    "page_numbers": [
+      24
+    ],
+    "preview": "SQL provides a rich DDL that allows one to define tables with data types and integrity constraints. For instance, the following SQL DDL statement defines the department table: create table department ( dept\\_name char (20), building char (15), budget numeric (12,2)); Page 15 Execution of the precedi"
+  },
+  {
+    "chunk_id": 25,
+    "section": "Section 1.4.3 Data-Manipulation Language",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.3 Data-Manipulation Language",
+    "page_numbers": [
+      25,
+      26
+    ],
+    "preview": "A data-manipulation language ( DML ) is a language that enables users to access or manipulate data as organized by the appropriate data model. The types of access are: - Retrieval of information stored in the database. - Insertion of new information into the database. - Deletion of information from "
+  },
+  {
+    "chunk_id": 26,
+    "section": "Section 1.4.3 Data-Manipulation Language",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.3 Data-Manipulation Language",
+    "page_numbers": [
+      26,
+      27
+    ],
+    "preview": ". The goal is  to allow humans to interact efficiently with the system. The query processor component of the database system (which we study in Chapter 15 and Chapter 16) translates DML queries into sequences of actions at the physical level of the database system. In Chapter 22, we study the proces"
+  },
+  {
+    "chunk_id": 27,
+    "section": "Section 1.4.3 Data-Manipulation Language",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.3 Data-Manipulation Language",
+    "page_numbers": [
+      27
+    ],
+    "preview": ". dept\\_name and department . budget &gt; 95000; If the preceding query were run on the tables in Figure 1.1, the system would find that there are two departments with a budget of greater than $95,000-Computer Science and Finance; there are five instructors in these departments. Thus, the result con"
+  },
+  {
+    "chunk_id": 28,
+    "section": "Section 1.4.5 Database Access from Application Programs",
+    "section_path": "Chapter 1 Section 1.4 Database Languages Section 1.4.5 Database Access from Application Programs",
+    "page_numbers": [
+      27,
+      28
+    ],
+    "preview": "Page 17 Non-procedural query languages such as SQL are not as powerful as a universal Turing machine; that is, there are some computations that are possible using a generalpurpose programming language but are not possible using SQL. SQL also does not support actions such as input from users, output "
+  },
+  {
+    "chunk_id": 29,
+    "section": "Section 1.5 Database Design",
+    "section_path": "Chapter 1 Section 1.5 Database Design",
+    "page_numbers": [
+      28,
+      29
+    ],
+    "preview": "Database systems are designed to manage large bodies of information. These large bodies of information do not exist in isolation. They are part of the operation of some enterprise whose end product may be information from the database or may be some device or service for which the database plays onl"
+  },
+  {
+    "chunk_id": 30,
+    "section": "Section 1.5 Database Design",
+    "section_path": "Chapter 1 Section 1.5 Database Design",
+    "page_numbers": [
+      29
+    ],
+    "preview": ". The designer can also examine the design to remove any redundant features. The focus at this point is on describing the data and their relationships, rather than on specifying physical storage details. In terms of the relational model, the conceptual-design process involves decisions on what attri"
+  },
+  {
+    "chunk_id": 31,
+    "section": "Section 1.6 Database Engine",
+    "section_path": "Chapter 1 Section 1.6 Database Engine",
+    "page_numbers": [
+      30,
+      31
+    ],
+    "preview": "A database system is partitioned into modules that deal with each of the responsibilities of the overall system. The functional components of a database system can be broadly divided into the storage manager, the query processor components, and the transaction management component. The storage manag"
+  },
+  {
+    "chunk_id": 32,
+    "section": "Section 1.6 Database Engine",
+    "section_path": "Chapter 1 Section 1.6 Database Engine",
+    "page_numbers": [
+      31
+    ],
+    "preview": ". It is the job of the database system to translate updates and queries written in a nonprocedural language, at the logical level, into an efficient sequence of operations at the physical level. The transaction manager is important because it allows application developers to treat a sequence of data"
+  },
+  {
+    "chunk_id": 33,
+    "section": "Section 1.6.1 Storage Manager",
+    "section_path": "Chapter 1 Section 1.6 Database Engine Section 1.6.1 Storage Manager",
+    "page_numbers": [
+      31,
+      32
+    ],
+    "preview": "The storage manager is the component of a database system that provides the interface between the low-level data stored in the database and the application programs and queries submitted to the system. The storage manager is responsible for the interaction with the file manager. The raw data are sto"
+  },
+  {
+    "chunk_id": 34,
+    "section": "Section 1.6.1 Storage Manager",
+    "section_path": "Chapter 1 Section 1.6 Database Engine Section 1.6.1 Storage Manager",
+    "page_numbers": [
+      32
+    ],
+    "preview": ". Like the index in this textbook, a database index provides pointers to those data items that hold a particular value. For example, we could use an index to find the instructor record with a particular ID , or all instructor records with a particular name . Page 20 We discuss storage media, file st"
+  },
+  {
+    "chunk_id": 35,
+    "section": "Section 1.6.2 The Query Processor",
+    "section_path": "Chapter 1 Section 1.6 Database Engine Section 1.6.2 The Query Processor",
+    "page_numbers": [
+      33
+    ],
+    "preview": "The query processor components include: - DDL interpreter , which interprets DDL statements and records the definitions in the data dictionary. - DML compiler , which translates DML statements in a query language into an evaluation plan consisting of low-level instructions that the query-evaluation "
+  },
+  {
+    "chunk_id": 36,
+    "section": "Section 1.6.3 Transaction Management",
+    "section_path": "Chapter 1 Section 1.6 Database Engine Section 1.6.3 Transaction Management",
+    "page_numbers": [
+      33,
+      34
+    ],
+    "preview": "Often, several operations on the database form a single logical unit of work. An example is a funds transfer, as in Section 1.2, in which one account A is debited and another account B is credited. Clearly, it is essential that either both the credit and debit occur, or that neither occur. That is, "
+  },
+  {
+    "chunk_id": 37,
+    "section": "Section 1.6.3 Transaction Management",
+    "section_path": "Chapter 1 Section 1.6 Database Engine Section 1.6.3 Transaction Management",
+    "page_numbers": [
+      34
+    ],
+    "preview": ". For example, the transaction to transfer funds from account A to account B could be defined to be composed of two separate programs: one that debits account A and another that credits account B . The execution of these two programs one after the other will indeed preserve consistency. However, eac"
+  },
+  {
+    "chunk_id": 38,
+    "section": "Section 1.6.3 Transaction Management",
+    "section_path": "Chapter 1 Section 1.6 Database Engine Section 1.6.3 Transaction Management",
+    "page_numbers": [
+      34
+    ],
+    "preview": ". The basic concepts of transaction processing are covered in Chapter 17. The management of concurrent transactions is covered in Chapter 18. Chapter 19 covers failure recovery in detail. The concept of a transaction has been applied broadly in database systems and applications. While the initial us"
+  },
+  {
+    "chunk_id": 39,
+    "section": "Section 1.7 Database and Application Architecture",
+    "section_path": "Chapter 1 Section 1.7 Database and Application Architecture",
+    "page_numbers": [
+      35,
+      36,
+      37
+    ],
+    "preview": "We are now in a position to provide a single picture of the various components of a database system and the connections among them. Figure 1.3 shows the architecture of a database system that runs on a centralized server machine. The figure summarizes how different types of users interact with a dat"
+  },
+  {
+    "chunk_id": 40,
+    "section": "Section 1.7 Database and Application Architecture",
+    "section_path": "Chapter 1 Section 1.7 Database and Application Architecture",
+    "page_numbers": [
+      37,
+      38
+    ],
+    "preview": ". Earlier-generation database applications used a two-tier architecture , where the application resides at the client machine, and invokes database system functionality at the server machine through query language statements.  Figure 1.4 T wo-tier and three-tier architectures. In contrast, modern da"
+  },
+  {
+    "chunk_id": 41,
+    "section": "Section 1.8 Database Users and Administrators",
+    "section_path": "Chapter 1 Section 1.8 Database Users and Administrators",
+    "page_numbers": [
+      38
+    ],
+    "preview": "A primary goal of a database system is to retrieve information from and store new information in the database. People who work with a database can be categorized as database users or database administrators."
+  },
+  {
+    "chunk_id": 42,
+    "section": "Section 1.8.1 Database Users and User Interfaces",
+    "section_path": "Chapter 1 Section 1.8 Database Users and Administrators Section 1.8.1 Database Users and User Interfaces",
+    "page_numbers": [
+      39
+    ],
+    "preview": "There are four different types of database-system users, differentiated by the way they expect to interact with the system. Different types of user interfaces have been designed for the different types of users. - Naïve users are unsophisticated users who interact with the system by using predefined"
+  },
+  {
+    "chunk_id": 43,
+    "section": "Section 1.8.2 Database Administrator",
+    "section_path": "Chapter 1 Section 1.8 Database Users and Administrators Section 1.8.2 Database Administrator",
+    "page_numbers": [
+      40,
+      41
+    ],
+    "preview": "- One of the main reasons for using DBMSs is to have central control of both the data and the programs that access those data. A person who has such central control over the system is called a database administrator ( DBA ). The functions of a DBA include: - Schema definition. The DBA creates the or"
+  },
+  {
+    "chunk_id": 44,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      41,
+      42
+    ],
+    "preview": "Information processing drives the growth of computers, as it has from the earliest days of commercial computers. In fact, automation of data processing tasks predates computers. Punched cards, invented by Herman Hollerith, were used at the very beginning of the twentieth century to record U.S. censu"
+  },
+  {
+    "chunk_id": 45,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      42,
+      43
+    ],
+    "preview": ". The position of data on disk was immaterial, since any location on disk could be accessed in just tens of milliseconds. Data were thus freed from the tyranny of sequentiality. With the advent of disks, the network and hierarchical data models were developed, which allowed data structures such as l"
+  },
+  {
+    "chunk_id": 46,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      43,
+      44
+    ],
+    "preview": ". By the early 1980s, relational databases had become competitive with network and hierarchical database systems even in the area of performance. Relational databases were so easy to use that they eventually replaced network and hierarchical databases. Programmers using those older models were force"
+  },
+  {
+    "chunk_id": 47,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      44,
+      45
+    ],
+    "preview": ". Database systems now had to support very high transaction-processing rates, as well as very high reliability and 24 × 7 availability (availability 24 hours a day, 7 days a week, meaning no downtime for scheduled maintenance activities). Database systems also had to support web interfaces to data. "
+  },
+  {
+    "chunk_id": 48,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      45,
+      46
+    ],
+    "preview": ". These systems featured physical data organizations suitable for analytic processing, such as \"column-stores,\" in which tables are stored by column rather than the traditional roworiented storage of the major commercial database systems. The huge volumes of data, as well as the fact that much of th"
+  },
+  {
+    "chunk_id": 49,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      46,
+      47
+    ],
+    "preview": ". - 2010s: The limitations of NoSQL systems, such as lack of support for consistency, and lack of support for declarative querying, were found acceptable by many applications (e.g., social networks), in return for the benefits they provided such as scalability and availability. However, by the early"
+  },
+  {
+    "chunk_id": 50,
+    "section": "Section 1.9 History of Database Systems",
+    "section_path": "Chapter 1 Section 1.9 History of Database Systems",
+    "page_numbers": [
+      47
+    ],
+    "preview": ". There is an unresolved tradeoff  - between an individual's right of privacy and society's need to know. Various national governments have put regulations on privacy in place. High-profile security breaches have created a public awareness of the challenges in cybersecurity and the risks of storing "
+  },
+  {
+    "chunk_id": 51,
+    "section": "Section 2.1  Structure of Relational Databases",
+    "section_path": "Chapter 2 Section 2.1  Structure of Relational Databases",
+    "page_numbers": [
+      47,
+      61,
+      62
+    ],
+    "preview": "A relational database consists of a collection of tables , each of which is assigned a unique name. For example, consider the instructor table of Figure 2.1, which stores information about instructors. The table has four column headers: ID, name, dep\\_Dname, and salary. Each row of this table record"
+  },
+  {
+    "chunk_id": 52,
+    "section": "Section 2.1  Structure of Relational Databases",
+    "section_path": "Chapter 2 Section 2.1  Structure of Relational Databases",
+    "page_numbers": [
+      62,
+      63
+    ],
+    "preview": ". In mathematical terminology, a tuple is simply a sequence (or list) of values. A relationship between n values is represented mathematically by an n\\_tuple of values, that is, a tuple with n values, which corresponds to a row in a table. Thus, in the relational model the term relation is used to r"
+  },
+  {
+    "chunk_id": 53,
+    "section": "Section 2.1  Structure of Relational Databases",
+    "section_path": "Chapter 2 Section 2.1  Structure of Relational Databases",
+    "page_numbers": [
+      63,
+      64
+    ],
+    "preview": ". Thus, the domain of the salary attribute of the instructor relation is the set of all possible salary values, while the domain of the name attribute is the set of all possible instructor names. We require that, for all relations r , the domains of all attributes of r be atomic. A domain is atomic "
+  },
+  {
+    "chunk_id": 54,
+    "section": "Section 2.1  Structure of Relational Databases",
+    "section_path": "Chapter 2 Section 2.1  Structure of Relational Databases",
+    "page_numbers": [
+      64
+    ],
+    "preview": ". We shall see later that null values cause a number of difficulties when we access or update the database, and thus they should be eliminated if at all possible. We shall assume null values are absent initially, and in Section 3.6 we describe the effect of nulls on different operations. The relativ"
+  },
+  {
+    "chunk_id": 55,
+    "section": "Section 2.2  Database Schema",
+    "section_path": "Chapter 2 Section 2.2  Database Schema",
+    "page_numbers": [
+      64,
+      65
+    ],
+    "preview": "When we talk about a database, we must differentiate between the database schema , which is the logical design of the database, and the database instance , which is a snapshot of the data in the database at a given instant in time. The concept of a relation corresponds to the programminglanguage not"
+  },
+  {
+    "chunk_id": 56,
+    "section": "Section 2.2  Database Schema",
+    "section_path": "Chapter 2 Section 2.2  Database Schema",
+    "page_numbers": [
+      65,
+      66,
+      67
+    ],
+    "preview": ". This duplication is not a coincidence. Rather, using common attributes in relation schemas is one way of relating tuples of distinct relations. For example, suppose we wish to find the information about all the instructors who work in the Watson building. We look first at the department relation t"
+  },
+  {
+    "chunk_id": 57,
+    "section": "Section 2.3  Keys",
+    "section_path": "Chapter 2 Section 2.3  Keys",
+    "page_numbers": [
+      67,
+      68
+    ],
+    "preview": "We must have a way to specify how tuples within a given relation are distinguished. This is expressed in terms of their attributes. That is, the values of the attribute values of a tuple must be such that they can uniquely identify the tuple. In other words, no two tuples in a relation are allowed t"
+  },
+  {
+    "chunk_id": 58,
+    "section": "Section 2.3  Keys",
+    "section_path": "Chapter 2 Section 2.3  Keys",
+    "page_numbers": [
+      68,
+      69
+    ],
+    "preview": ". Then, both { ID } and { name, dept\\_name } are candidate keys. Although the attributes ID and name together can distinguish instructor tuples, their combination, { ID , name }, does not form a candidate key, since the attribute ID alone is a candidate key. We shall use the term primary key to deno"
+  },
+  {
+    "chunk_id": 59,
+    "section": "Section 2.3  Keys",
+    "section_path": "Chapter 2 Section 2.3  Keys",
+    "page_numbers": [
+      69,
+      70
+    ],
+    "preview": ". For example, time\\_slot\\_id 'A' may meet from 8.00 AM to 8.50 AM on Mondays, Wednesdays, and Fridays. It is possible for a time slot to have multiple sessions within a single day, at different times, so the time-slot\\_id and day together do not uniquely identify the tuple. The primary key of the t"
+  },
+  {
+    "chunk_id": 60,
+    "section": "Section 2.3  Keys",
+    "section_path": "Chapter 2 Section 2.3  Keys",
+    "page_numbers": [
+      70,
+      71
+    ],
+    "preview": ". Consider the attribute dept\\_name of the instructor relation. It would not make sense for a tuple in instructor to have a value for dept\\_name that does not correspond to a department in the dept\\_name relation. Thus, in any database instance, given any tuple, say t a , from the instructor relatio"
+  },
+  {
+    "chunk_id": 61,
+    "section": "Section 2.3  Keys",
+    "section_path": "Chapter 2 Section 2.3  Keys",
+    "page_numbers": [
+      71
+    ],
+    "preview": ". As an example, consider the values in the time\\_slot\\_id attribute of the section relation. We require that these values must exist in the time\\_slot\\_id attribute of the time slot relation. Such a requirement is an example of a referential integrity constraint. In general, a referential integrity"
+  },
+  {
+    "chunk_id": 62,
+    "section": "Section 2.4  Schema Diagrams",
+    "section_path": "Chapter 2 Section 2.4  Schema Diagrams",
+    "page_numbers": [
+      71,
+      72
+    ],
+    "preview": "A database schema, along with primary key and foreign-key constraints, can be depicted by schema diagrams . Figure 2.9 shows the schema diagram for our university organization. Each relation appears as a box, with the relation name at the top in blue and the attributes listed inside the box.  Figure"
+  },
+  {
+    "chunk_id": 63,
+    "section": "Section 2.5  Relational Query Languages",
+    "section_path": "Chapter 2 Section 2.5  Relational Query Languages",
+    "page_numbers": [
+      72,
+      73
+    ],
+    "preview": "A query language is a language in which a user requests information from the database. These languages are usually on a level higher than that of a standard programming language. Query languages can be categorized as imperative, functional, or declarative. In an imperative query language , the user "
+  },
+  {
+    "chunk_id": 64,
+    "section": "Section 2.6  The Relational Algebra",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra",
+    "page_numbers": [
+      73,
+      74
+    ],
+    "preview": "The relational algebra consists of a set of operations that take one or two relations as input and produce a new relation as their result. Some of these operations, such as the select, project, and rename operations, are called unary operations because they operate on one relation. The other operati"
+  },
+  {
+    "chunk_id": 65,
+    "section": "Section 2.6.1 The Select Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.1 The Select Operation",
+    "page_numbers": [
+      74,
+      75
+    ],
+    "preview": "The select operation selects tuples that satisfy a given predicate. We use the lowercase Greek letter sigma (a) to denote selection. The predicate appears as a subscript to σ. The argument relation is in parentheses after the σ. Thus, to select those tuples of the instructor relation where the instr"
+  },
+  {
+    "chunk_id": 66,
+    "section": "Section 2.6.2 The Project Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.2 The Project Operation",
+    "page_numbers": [
+      75,
+      76
+    ],
+    "preview": "Suppose we want to list all instructors' ID , name, and salary, but we do not care about the dept\\_name . The project operation allows us to produce this relation. The project operation is a unary operation that returns its argument relation, with certain attributes left out. Since a relation is a s"
+  },
+  {
+    "chunk_id": 67,
+    "section": "Section 2.6.3 Composition of Relational Operations",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.3 Composition of Relational Operations",
+    "page_numbers": [
+      76
+    ],
+    "preview": "The fact that the result of a relational operation is itself a relation is important. Consider the more complicated query 'Find the names of all instructors in the Physics department.' We write: <!-- formula-not-decoded --> Notice that, instead of giving the name of a relation as the argument of the"
+  },
+  {
+    "chunk_id": 68,
+    "section": "Section 2.6.4 The Cartesian-Product Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.4 The Cartesian-Product Operation",
+    "page_numbers": [
+      77,
+      78,
+      79
+    ],
+    "preview": "The Cartesian-product operation, denoted by a cross (×), allows us to combine information from any two relations. We write the Cartesian product of relations r 1 and r 2 as r 1 × r 2 . A Cartesian product of database relations differs in its definition slightly from the mathematical definition of a "
+  },
+  {
+    "chunk_id": 69,
+    "section": "Section 2.6.4 The Cartesian-Product Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.4 The Cartesian-Product Operation",
+    "page_numbers": [
+      79
+    ],
+    "preview": ". A similar problem arises if we use the result of a relationalalgebra expression in a Cartesian product, since we shall need a name for the relation so that we can refer to the relation's attributes. In Section 2.6.8, we see how to avoid these problems by using the rename operation. Now that we kno"
+  },
+  {
+    "chunk_id": 70,
+    "section": "Section 2.6.5 The Join Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.5 The Join Operation",
+    "page_numbers": [
+      80,
+      81
+    ],
+    "preview": "Suppose we want to find the information about all instructors together with the course Jd of all courses they have taught. We need the information in both the instructor relation and the teaches relation to compute the required result. The Cartesian product of instructor and teaches does bring toget"
+  },
+  {
+    "chunk_id": 71,
+    "section": "Section 2.6.6 Set Operations",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.6 Set Operations",
+    "page_numbers": [
+      81,
+      82,
+      83
+    ],
+    "preview": "Consider a query to find the set of all courses taught in the Fall 2017 semester, the Spring 2018 semester, or both. The information is contained in the section relation (Figure 2.6). T o find the set of all courses taught in the Fall 2017 semester, we write: Πcours\\_id (σ emester = 'Fall'∧year=2017"
+  },
+  {
+    "chunk_id": 72,
+    "section": "Section 2.6.6 Set Operations",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.6 Set Operations",
+    "page_numbers": [
+      83,
+      84
+    ],
+    "preview": ". Page 55 Such relations are referred to as compatible relations. For example, it would not make sense to take the union of the instructor and section relations, since they have different numbers of attributes. And even though the instructor and the student relations both have arity 4, their 4th att"
+  },
+  {
+    "chunk_id": 73,
+    "section": "Section 2.6.7 The Assignment Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.7 The Assignment Operation",
+    "page_numbers": [
+      84
+    ],
+    "preview": "It is convenient at times to write a relational-algebra expression by assigning parts of it to temporary relation variables. The assignment operation, denoted by ←, works like assignment in a programming language. To illustrate this operation, consider the query to find courses that run in Fall 2017"
+  },
+  {
+    "chunk_id": 74,
+    "section": "Section 2.6.8 The Rename Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.8 The Rename Operation",
+    "page_numbers": [
+      85,
+      86
+    ],
+    "preview": "Page 57 Unlike relations in the database, the results of relational-algebra expressions do not have a name that we can use to refer to them. It is useful in some cases to give them names; the rename operator, denoted by the lowercase Greek letter rho (ρ), lets us do this. Given a relational-algebra "
+  },
+  {
+    "chunk_id": 75,
+    "section": "Section 2.6.8 The Rename Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.8 The Rename Operation",
+    "page_numbers": [
+      86,
+      87
+    ],
+    "preview": ". The rename operator allows us to do this using different names for each referencing of the instructor relation. In this example, we shall use the name i to refer to our scan of the instructor relation in which we are seeking those that will be part of the answer, and w to refer to the scan of the "
+  },
+  {
+    "chunk_id": 76,
+    "section": "Section 2.6.8 The Rename Operation",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.8 The Rename Operation",
+    "page_numbers": [
+      87
+    ],
+    "preview": ". It is covered in Section 4.1.3 (Note 4.1 on page 136).  ``` Π i.ID.i.name ((σ i.salary > w.salary (ρ i (instructor ) × σ w.id=12121 (ρ w ( instructor)))) ) ``` The rename operation is not strictly required, since it is possible to use a positional notation for attributes. We can name attributes of"
+  },
+  {
+    "chunk_id": 77,
+    "section": "Section 2.6.9 Equivalent Queries",
+    "section_path": "Chapter 2 Section 2.6  The Relational Algebra Section 2.6.9 Equivalent Queries",
+    "page_numbers": [
+      87
+    ],
+    "preview": "Note that there is often more than one way to write a query in relational algebra. Consider the following query, which finds information about courses taught by instructors in the Physics department: σ dept\\_name = 'Physics' (instructor ⋈ instructor.ID = teaches.ID teaches ) Now consider an alternat"
+  },
+  {
+    "chunk_id": 78,
+    "section": "Section 14.1  Basic Concepts",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts",
+    "page_numbers": [
+      88,
+      98,
+      99
+    ],
+    "preview": "An index for a file in a database system works in much the same way as the index in this textbook. If we want to learn  Page 624 about a particular topic (specified by a word or a phrase) in this textbook, we can search for the topic in the index at the back of the book, find the pages where it occu"
+  },
+  {
+    "chunk_id": 79,
+    "section": "Section 14.1  Basic Concepts",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts",
+    "page_numbers": [
+      99
+    ],
+    "preview": ". We shall discuss several of these techniques in this chapter. There are two basic kinds of indices: - Ordered indices. Based on a sorted ordering of the values.  - Hash indices. Based on a uniform distribution of values across a range of buckets. The bucket to which a value is assigned is determin"
+  },
+  {
+    "chunk_id": 80,
+    "section": "Section 14.1  Basic Concepts",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts",
+    "page_numbers": [
+      99,
+      100
+    ],
+    "preview": ". An attribute or set of attributes used to look up records in a file is called a search key . Note that this definition of key differs from that used in primary key, candidate key, and superkey. This duplicate meaning for key is (unfortunately) well established in practice. Using our notion of a se"
+  },
+  {
+    "chunk_id": 81,
+    "section": "Section 14.1  Basic Concepts",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts",
+    "page_numbers": [
+      100,
+      101,
+      102
+    ],
+    "preview": ". Such files, with a clustering index on the search key, are called index-sequential files . They represent one of the oldest index schemes used in database systems. They are designed for applications that require both sequential  processing of the entire file and random access to individual records"
+  },
+  {
+    "chunk_id": 82,
+    "section": "Section 14.1  Basic Concepts",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts",
+    "page_numbers": [
+      102,
+      103,
+      104
+    ],
+    "preview": ". Sparse indices can be used only if the relation is stored in sorted order of the search key; that is, if the index is a clustering index. As is true in dense indices, each index entry contains a search-key value and a pointer to the first data record with that search-key value. T o locate a record"
+  },
+  {
+    "chunk_id": 83,
+    "section": "Section 14.1  Basic Concepts",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts",
+    "page_numbers": [
+      104
+    ],
+    "preview": ". Observe that in this case the instructor file is sorted on the search key dept\\_name, instead of ID ,  Page 627 otherwise the index on dept\\_name would be a nonclustering index. Suppose that we are looking up records for the History department. Using the dense index of Figure 14.4, we follow the p"
+  },
+  {
+    "chunk_id": 84,
+    "section": "Section 14.2.2 Multilevel Indices",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.2 Multilevel Indices",
+    "page_numbers": [
+      105,
+      106
+    ],
+    "preview": "Page 629 Suppose we build a dense index on a relation with 1,000,000 tuples. Index entries are smaller than data records, so let us assume that 100 index entries fit on a 4kilobyte block. Thus, our index occupies 10,000 blocks. If the relation instead had 100,000,000 tuples, the index would instead "
+  },
+  {
+    "chunk_id": 85,
+    "section": "Section 14.2.2 Multilevel Indices",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.2 Multilevel Indices",
+    "page_numbers": [
+      106,
+      107
+    ],
+    "preview": ". Note that, if overflow blocks have been used, binary search is only possible on the non-overflow blocks, and the actual cost may be even higher than the logarithmic bound above. A sequential search requires b sequential block reads, which may take even longer (although in some cases the lower cost"
+  },
+  {
+    "chunk_id": 86,
+    "section": "Section 14.2.2 Multilevel Indices",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.2 Multilevel Indices",
+    "page_numbers": [
+      107
+    ],
+    "preview": ". If our file is extremely large, even the outer index may grow too large to fit in main memory. With a 100,000,000tuple relation, the inner index would occupy 1,000,000 blocks, and the outer index would occupy 10,000 blocks, or 40 megabytes. Since there are many demands on main memory, it may not b"
+  },
+  {
+    "chunk_id": 87,
+    "section": "Section 14.2.3 Index Update",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.3 Index Update",
+    "page_numbers": [
+      108
+    ],
+    "preview": "Regardless of what form of index is used, every index must be updated whenever a record is either inserted into or deleted from the file. Further, in case a record in the file is updated, any index whose search-key attribute is affected by the update must also be updated; for example, if the departm"
+  },
+  {
+    "chunk_id": 88,
+    "section": "Section 14.2.3.1 Insertion",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.3 Index Update Section 14.2.3.1 Insertion",
+    "page_numbers": [
+      108,
+      109
+    ],
+    "preview": "First, the system performs a lookup using the search-key value that appears in the record to be inserted. The actions the system takes next depend on whether the index is dense or sparse: - Page 631 Dense indices: 1. If the search-key value does not appear in the index, the system inserts an index e"
+  },
+  {
+    "chunk_id": 89,
+    "section": "Section 14.2.3.2 Deletion",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.3 Index Update Section 14.2.3.2 Deletion",
+    "page_numbers": [
+      109,
+      110
+    ],
+    "preview": "To delete a record, the system first looks up the record to be deleted. The actions the system takes next depend on whether the index is dense or sparse: - Dense indices: 1. If the deleted record was the only record with its particular search-key value, then the system deletes the corresponding inde"
+  },
+  {
+    "chunk_id": 90,
+    "section": "Section 14.2.3.2 Deletion",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.3 Index Update Section 14.2.3.2 Deletion",
+    "page_numbers": [
+      110,
+      111
+    ],
+    "preview": ". On deletion or insertion, the system updates the lowest-level index as described. As far as the second level is concerned, the lowest-level index is merely a file containing recordsthus, if there is any change in the lowest-level index, the system updates the second-level index as described. The  "
+  },
+  {
+    "chunk_id": 91,
+    "section": "Section 14.2.4 Secondary Indices",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.4 Secondary Indices",
+    "page_numbers": [
+      111,
+      112
+    ],
+    "preview": "Secondary indices must be dense, with an index entry for every search-key value, and a pointer to every record in the file. A clustering index may be sparse, storing only some of the search-key values, since it is always possible to find records with intermediate search-key values by a sequential ac"
+  },
+  {
+    "chunk_id": 92,
+    "section": "Section 14.2.4 Secondary Indices",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.4 Secondary Indices",
+    "page_numbers": [
+      112
+    ],
+    "preview": ".  One way to implement secondary indices on nonunique search keys is as follows: Unlike the case of primary indices, the pointers in such a secondary index do not point directly to the records. Instead, each pointer in the index points to a bucket that in turn contains pointers to the file. Figure "
+  },
+  {
+    "chunk_id": 93,
+    "section": "Section 14.2.4 Secondary Indices",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.4 Secondary Indices",
+    "page_numbers": [
+      112
+    ],
+    "preview": ". If a file has multiple indices, whenever the file is modified, every index must be updated. Secondary indices improve the performance of queries that use keys other than the search key of the clustering index. However, they impose a significant overhead on modification of the database. The designe"
+  },
+  {
+    "chunk_id": 94,
+    "section": "Section 14.2.5 Indices on Multiple Keys",
+    "section_path": "Chapter 14 Section 14.1  Basic Concepts Section 14.2.5 Indices on Multiple Keys",
+    "page_numbers": [
+      113
+    ],
+    "preview": "Page 634 Although the examples we have seen so far have had a single attribute in a search key, in general a search key can have more than one attribute. A search key containing more than one attribute is referred to as a composite search key . The structure of the index is the same as that of any o"
+  },
+  {
+    "chunk_id": 95,
+    "section": "Section 14.3  B + -Tree Index Files",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files",
+    "page_numbers": [
+      114
+    ],
+    "preview": "The main disadvantage of the index-sequential file organization is that performance degrades as the file grows, both for index lookups and for sequential scans through the data. Although this degradation can be remedied by reorganization of the file, frequent reorganizations are undesirable. The B +"
+  },
+  {
+    "chunk_id": 96,
+    "section": "Section 14.3.1 Structure of a B + -Tree",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.1 Structure of a B + -Tree",
+    "page_numbers": [
+      115,
+      116
+    ],
+    "preview": "Page 635 A B + -tree index is a multilevel index, but it has a structure that differs from that of the multilevel index-sequential file. We assume for now that there are no duplicate search key values, that is, each search key is unique and occurs in at most one record; we consider the issue of nonu"
+  },
+  {
+    "chunk_id": 97,
+    "section": "Section 14.3.1 Structure of a B + -Tree",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.1 Structure of a B + -Tree",
+    "page_numbers": [
+      116,
+      117,
+      118
+    ],
+    "preview": ". Now we can explain the use of the pointer P n . Since there is a linear order on the leaves based on the search-key values that they contain, we use P n to chain together the leaf nodes in search-key order. This ordering allows for efficient sequential processing of the file.  Page 636 The nonleaf"
+  },
+  {
+    "chunk_id": 98,
+    "section": "Section 14.3.1 Structure of a B + -Tree",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.1 Structure of a B + -Tree",
+    "page_numbers": [
+      118
+    ],
+    "preview": ". Figure 14.10 shows another B + -tree for the instructor file, this time with n = 6. Observe that the height of this tree is less than that of the previous tree, which had n = 4. Figure 14.10 B + -tree for instructor file with n = 6. Page 637 These examples of B + -trees are all balanced. That is, "
+  },
+  {
+    "chunk_id": 99,
+    "section": "Section 14.3.1 Structure of a B + -Tree",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.1 Structure of a B + -Tree",
+    "page_numbers": [
+      118
+    ],
+    "preview": ". Index lookups on just name can be efficiently handled using this index, as we shall see shortly. Section 14.3.5 covers issues in handling of nonunique search keys in more detail. In our examples, we show indices on some nonunique search keys, such as instructor.name, assuming for simplicity that t"
+  },
+  {
+    "chunk_id": 100,
+    "section": "Section 14.3.2 Queries on B + -Trees",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.2 Queries on B + -Trees",
+    "page_numbers": [
+      119,
+      120,
+      121
+    ],
+    "preview": "Let us consider how we process queries on a B + -tree. Suppose that we wish to find a record with a given value v for the search key. Figure 14.11 presents pseudocode for a function fi nd(v ) to carry out this task, assuming there are no duplicates, that is, there is at most one record with a partic"
+  },
+  {
+    "chunk_id": 101,
+    "section": "Section 14.3.2 Queries on B + -Trees",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.2 Queries on B + -Trees",
+    "page_numbers": [
+      121,
+      122,
+      123
+    ],
+    "preview": ". If no search key with value v is found in the leaf node, no record with key value v exists in the relation, and function fi nd returns null, to indicate failure. B + -trees can also be used to find all records with search key values in a specified range [ lb, ub ]. For example, with a B + -tree on"
+  },
+  {
+    "chunk_id": 102,
+    "section": "Section 14.3.2 Queries on B + -Trees",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.2 Queries on B + -Trees",
+    "page_numbers": [
+      123
+    ],
+    "preview": ". We now consider the cost of querying on a B + -tree index. In processing a query, we traverse a path in the tree from the root to some leaf node. If there are N records in the file, the path is no longer than ⌈log ⌈ n /2⌉ ( N )⌉. Typically, the node size is chosen to be the same as the size of a d"
+  },
+  {
+    "chunk_id": 103,
+    "section": "Section 14.3.2 Queries on B + -Trees",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.2 Queries on B + -Trees",
+    "page_numbers": [
+      123
+    ],
+    "preview": ". The difference is significant with a magnetic disk, since each block read could require a disk arm seek which, together with the block read, takes about 10 milliseconds on a magnetic disk. The difference is not quite as drastic with flash storage, where a read of a 4 kilobyte page takes around 10 "
+  },
+  {
+    "chunk_id": 104,
+    "section": "Section 14.3.2 Queries on B + -Trees",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.2 Queries on B + -Trees",
+    "page_numbers": [
+      123,
+      125
+    ],
+    "preview": ". The composite key is created by adding extra attributes, such as the primary key, to a i , to ensure uniqueness. Suppose we created an index on the composite key ( a i , A p ) instead of creating an index on a i .   Page 641 An important question, then, is how do we retrieve all tuples with a give"
+  },
+  {
+    "chunk_id": 105,
+    "section": "Section 14.3.3 Updates on B + -trees",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees",
+    "page_numbers": [
+      125,
+      126
+    ],
+    "preview": "When a record is inserted into, or deleted from a relation, indices on the relation must be updated correspondingly. Recall that updates to a record can be modeled as a deletion of the old record followed by insertion of the updated record. Hence we only consider the case of insertion and deletion. "
+  },
+  {
+    "chunk_id": 106,
+    "section": "Section 14.3.3.1 Insertion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.1 Insertion",
+    "page_numbers": [
+      126,
+      127
+    ],
+    "preview": "Page 642 We now consider an example of insertion in which a node must be split. Assume that a record is inserted on the instructor relation, with the name value being Adams. We then need to insert an entry for 'Adams' into the B + -tree of Figure 14.9. Using the algorithm for lookup, we find that 'A"
+  },
+  {
+    "chunk_id": 107,
+    "section": "Section 14.3.3.1 Insertion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.1 Insertion",
+    "page_numbers": [
+      127,
+      128
+    ],
+    "preview": ". Figure 14.14 Insertion of \"Adams\" into the B + -tree of Figure 14.9. Splitting of a nonleaf node is a little different from splitting of a leaf node. Figure 14.15 shows the result of inserting a record with search key 'Lamport' into the tree shown in Figure 14.14. The leaf node in which 'Lamport' "
+  },
+  {
+    "chunk_id": 108,
+    "section": "Section 14.3.3.1 Insertion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.1 Insertion",
+    "page_numbers": [
+      128,
+      129,
+      130
+    ],
+    "preview": ". In our example, the search key value 'Gold' lies between the three pointers that went to the left node, and the two pointers that went to the right node. The value 'Gold' is not added to either of the split nodes. Instead, an entry (Gold, n 2) is added to the parent node, where n 2 is a pointer to"
+  },
+  {
+    "chunk_id": 109,
+    "section": "Section 14.3.3.1 Insertion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.1 Insertion",
+    "page_numbers": [
+      130,
+      131
+    ],
+    "preview": ". The procedure modifies the parent of N to record the split. The procedures insert\\_into\\_index and insert\\_in\\_parent use a temporary area of memory T to store the contents of a node being split. The procedures can be modified to copy data from the node  being split directly to the newly created n"
+  },
+  {
+    "chunk_id": 110,
+    "section": "Section 14.3.3.2 Deletion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.2 Deletion",
+    "page_numbers": [
+      131,
+      132
+    ],
+    "preview": "We now consider deletions that cause tree nodes to contain too few pointers. First, let us delete 'Srinivasan' from the B + -tree of Figure 14.14. The resulting B + -tree appears in Figure 14.18. We now consider how the deletion is performed. We first locate the entry for 'Srinivasan' by using our l"
+  },
+  {
+    "chunk_id": 111,
+    "section": "Section 14.3.3.2 Deletion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.2 Deletion",
+    "page_numbers": [
+      132,
+      133
+    ],
+    "preview": ". If possible, we try to coalesce the node with its sibling. In this case, coalescing is not possible, since the node and its sibling together have five pointers, against a maximum of four. The solution in this case is to redistribute the pointers between the node and its sibling, such that each has"
+  },
+  {
+    "chunk_id": 112,
+    "section": "Section 14.3.3.2 Deletion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.2 Deletion",
+    "page_numbers": [
+      133,
+      134
+    ],
+    "preview": ". It is not possible to merge the underfull node with its sibling, so a redistribution of values is carried out, moving the search-key value 'Kim' into the node containing 'Mozart', resulting in the tree shown in Figure 14.19. The value separating the two siblings has been updated in the parent, fro"
+  },
+  {
+    "chunk_id": 113,
+    "section": "Section 14.3.3.2 Deletion",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.3 Updates on B + -trees Section 14.3.3.2 Deletion",
+    "page_numbers": [
+      134,
+      136
+    ],
+    "preview": ". If the node is too small, we delete it from its parent. This deletion results in recursive application of the deletion algorithm until the root is reached, a parent remains adequately full after deletion, or redistribution is applied. Figure 14.21 outlines the pseudocode for deletion from a B + -t"
+  },
+  {
+    "chunk_id": 114,
+    "section": "Section 14.3.4 Complexity of B + -Tree Updates",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.4 Complexity of B + -Tree Updates",
+    "page_numbers": [
+      137
+    ],
+    "preview": "Although insertion and deletion operations on B + -trees are complicated, they require relatively few I/O operations, which is an important benefit since I/O operations are expensive. It can be shown that the number of I/O operations needed in the worst case for an insertion is proportional to log ⌈"
+  },
+  {
+    "chunk_id": 115,
+    "section": "Section 14.3.4 Complexity of B + -Tree Updates",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.4 Complexity of B + -Tree Updates",
+    "page_numbers": [
+      137
+    ],
+    "preview": ". For updates, the probability of a node split occurring is correspondingly very small. Depending on the ordering of inserts, with a fanout of 100, only from 1 in 100 to 1 in 50 insertions will result in a node split, requiring more than one block to be written. As a result, on an average an insert "
+  },
+  {
+    "chunk_id": 116,
+    "section": "Section 14.3.5 Nonunique Search Keys",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.5 Nonunique Search Keys",
+    "page_numbers": [
+      138,
+      139
+    ],
+    "preview": "We have assumed so far that search keys are unique. Recall also that we described earlier, in Section 14.3.1, how to make search keys unique by creating a composite search key containing the original search key and extra attributes, that together are unique across all records. The extra attribute ca"
+  },
+  {
+    "chunk_id": 117,
+    "section": "Section 14.3.5 Nonunique Search Keys",
+    "section_path": "Chapter 14 Section 14.3  B + -Tree Index Files Section 14.3.5 Nonunique Search Keys",
+    "page_numbers": [
+      139,
+      140
+    ],
+    "preview": ". However, this approach makes handling of split and search on internal nodes significantly more complicated, since two leaves may contain the same search key value. It also has a higher space overhead, since key values are stored as many times as there are records containing that value. A major pro"
+  },
+  {
+    "chunk_id": 118,
+    "section": "Section 14.4  B + -Tree Extensions",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions",
+    "page_numbers": [
+      140
+    ],
+    "preview": "In this section, we discuss several extensions and variations of the B + -tree index structure."
+  },
+  {
+    "chunk_id": 119,
+    "section": "Section 14.4.1 B + -Tree File Organization",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.1 B + -Tree File Organization",
+    "page_numbers": [
+      140,
+      141
+    ],
+    "preview": "Page 651 As mentioned in Section 14.3, the main drawback of indexsequential file organization is the degradation of performance as the file grows: With growth, an increasing percentage of index entries and actual records become out of order and are stored in overflow blocks. We solve the degradation"
+  },
+  {
+    "chunk_id": 120,
+    "section": "Section 14.4.1 B + -Tree File Organization",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.1 B + -Tree File Organization",
+    "page_numbers": [
+      141,
+      142
+    ],
+    "preview": ". The split propagates up the B + -tree in the normal fashion. When we delete a record, the system first removes it from the block containing it. If a block B becomes less than half full as a result, the records in B are redistributed with the records in an adjacent block B' . Assuming fixedsized re"
+  },
+  {
+    "chunk_id": 121,
+    "section": "Section 14.4.1 B + -Tree File Organization",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.1 B + -Tree File Organization",
+    "page_numbers": [
+      142,
+      143
+    ],
+    "preview": ". (⌊ x ⌋ denotes the greatest integer that is less than or equal to x ; that is, we drop the fractional part, if any.) During deletion of a record, if the occupancy of a node falls below ⌊2 n / 3 ⌋, the system attempts to borrow an entry from one of the sibling nodes. If both sibling nodes have ⌊2 n"
+  },
+  {
+    "chunk_id": 122,
+    "section": "Section 14.4.1 B + -Tree File Organization",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.1 B + -Tree File Organization",
+    "page_numbers": [
+      143
+    ],
+    "preview": ". Such large objects can be stored by splitting them into sequences of smaller records that are organized in a B + -tree file organization. The records can be sequentially numbered, or numbered by the byte offset of the record within the large object, and the record number can be used as the search "
+  },
+  {
+    "chunk_id": 123,
+    "section": "Section 14.4.2 Secondary Indices and Record Relocation",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.2 Secondary Indices and Record Relocation",
+    "page_numbers": [
+      143,
+      144
+    ],
+    "preview": "Some file organizations, such as the B + -tree file organization, may change the location of records even when the records have not been updated. As an example, when a leaf node is split in a B + -tree file organization, a number of records are moved to a new node. In such cases, all secondary indic"
+  },
+  {
+    "chunk_id": 124,
+    "section": "Section 14.4.3 Indexing Strings",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.3 Indexing Strings",
+    "page_numbers": [
+      144
+    ],
+    "preview": "Creating B + -tree indices on string-valued attributes raises two problems. The first problem is that strings can be of variable length. The second problem is that strings can be long, leading to a low fanout and a correspondingly increased tree height. With variable-length search keys, different no"
+  },
+  {
+    "chunk_id": 125,
+    "section": "Section 14.4.4 Bulk Loading of B + -Tree Indices",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.4 Bulk Loading of B + -Tree Indices",
+    "page_numbers": [
+      145,
+      146
+    ],
+    "preview": "Page 654 As we saw earlier, insertion of a record in a B + -tree requires a number of I/O operations that in the worst case is proportional to the height of the tree, which is usually fairly small (typically five or less, even for large relations). Now consider the case where a B + -tree is being bu"
+  },
+  {
+    "chunk_id": 126,
+    "section": "Section 14.4.4 Bulk Loading of B + -Tree Indices",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.4 Bulk Loading of B + -Tree Indices",
+    "page_numbers": [
+      146,
+      147
+    ],
+    "preview": ". Insertion of a large number of entries at a time into an index is referred to as bulk loading of the index. An efficient way to perform bulk loading of an index is as follows: First, create a temporary file containing index entries for the relation, then sort the file on the search key of the inde"
+  },
+  {
+    "chunk_id": 127,
+    "section": "Section 14.4.4 Bulk Loading of B + -Tree Indices",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.4 Bulk Loading of B + -Tree Indices",
+    "page_numbers": [
+      147
+    ],
+    "preview": ". If the B + -tree is initially empty, it can be constructed faster by building it bottom-up, from the leaf level, instead of using the usual insert procedure. In bottom-up B + -tree construction , after sorting the entries as we just described, we break up the sorted entries into blocks, keeping as"
+  },
+  {
+    "chunk_id": 128,
+    "section": "Section 14.4.5 B-Tree Index Files",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.5 B-Tree Index Files",
+    "page_numbers": [
+      148,
+      149
+    ],
+    "preview": "B-tree indices are similar to B + -tree indices. The primary distinction between the two approaches is that a B-tree eliminates the redundant storage of search-key values. In the B + -tree of Figure 14.9, the search keys 'Einstein', 'Gold', 'Mozart', and 'Srinivasan' appear in nonleaf nodes, in addi"
+  },
+  {
+    "chunk_id": 129,
+    "section": "Section 14.4.5 B-Tree Index Files",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.5 B-Tree Index Files",
+    "page_numbers": [
+      149
+    ],
+    "preview": ". A generalized B-tree leaf node appears in Figure 14.24a; a nonleaf node appears in Figure 14.24b. Leaf nodes are the same as in B + -trees. In nonleaf nodes, the pointers P i are the tree pointers that we used also for B + -trees, while the pointers B i are bucket or file-record pointers. In the g"
+  },
+  {
+    "chunk_id": 130,
+    "section": "Section 14.4.5 B-Tree Index Files",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.5 B-Tree Index Files",
+    "page_numbers": [
+      149
+    ],
+    "preview": ". Deletion in a B-tree is more complicated. In a B + -tree, the deleted entry always appears in a leaf. In a B-tree, the deleted entry may appear in a nonleaf node. The proper value must be selected as a replacement from the subtree of the node containing the deleted entry. Specifically, if search k"
+  },
+  {
+    "chunk_id": 131,
+    "section": "Section 14.4.6 Indexing on Flash Storage",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.6 Indexing on Flash Storage",
+    "page_numbers": [
+      150,
+      151
+    ],
+    "preview": "Page 657 In our description of indexing so far, we have assumed that data are resident on magnetic disks. Although this assumption continues to be true for the most part, flash storage capacities have grown significantly, and the cost of flash storage per gigabyte has dropped correspondingly, and fl"
+  },
+  {
+    "chunk_id": 132,
+    "section": "Section 14.4.6 Indexing on Flash Storage",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.6 Indexing on Flash Storage",
+    "page_numbers": [
+      151
+    ],
+    "preview": ". The optimum B + -tree node size for flash storage is smaller than that with magnetic disk, since flash pages are smaller than disk blocks; it makes sense for tree-node sizes to match to flash pages, since larger nodes would lead to multiple page writes when a node is updated. Although smaller page"
+  },
+  {
+    "chunk_id": 133,
+    "section": "Section 14.4.7 Indexing in Main Memory",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.7 Indexing in Main Memory",
+    "page_numbers": [
+      152
+    ],
+    "preview": "Page 658 Main memory today is large and cheap enough that many organizations can afford to buy enough main memory to fit all their operational data in-memory. B + -trees can be used to index in-memory data, with no change to the structure. However, some optimizations are possible. First, since memor"
+  },
+  {
+    "chunk_id": 134,
+    "section": "Section 14.4.7 Indexing in Main Memory",
+    "section_path": "Chapter 14 Section 14.4  B + -Tree Extensions Section 14.4.7 Indexing in Main Memory",
+    "page_numbers": [
+      152,
+      154
+    ],
+    "preview": ". Such B + -trees allow index operations to be completed with far fewer cache misses than tall, skinny tree structures such as binary trees, since each node traversal is likely to result in a cache miss. Compared to B + -trees with nodes that match cache lines, trees with large nodes also tend to ha"
+  },
+  {
+    "chunk_id": 135,
+    "section": "Section 14.5  Hash Indices",
+    "section_path": "Chapter 14 Section 14.5  Hash Indices",
+    "page_numbers": [
+      154
+    ],
+    "preview": "Page 659 Hashing is a widely used technique for building indices in main memory; such indices may be transiently created to process a join operation (as we will see in Section 15.5.5) or may be a permanent structure in a main memory database. Hashing has also been used as a way of organizing records"
+  },
+  {
+    "chunk_id": 136,
+    "section": "Section 14.5  Hash Indices",
+    "section_path": "Chapter 14 Section 14.5  Hash Indices",
+    "page_numbers": [
+      154,
+      156
+    ],
+    "preview": ". Hash indexing using overflow chaining is also called closed addressing (or, less commonly, closed hashing ). An alternative hashing scheme called open addressing is used in some applications, but is not suitable for most database indexing applications since open addressing does not support deletes"
+  },
+  {
+    "chunk_id": 137,
+    "section": "Section 14.5  Hash Indices",
+    "section_path": "Chapter 14 Section 14.5  Hash Indices",
+    "page_numbers": [
+      156,
+      157
+    ],
+    "preview": ". We handle bucket overflow by using overflow buckets . If a record must be inserted into a bucket b, and b is already full, the system provides an overflow bucket for b and inserts the record into the overflow bucket. If the overflow bucket is also full, the system provides another overflow bucket,"
+  },
+  {
+    "chunk_id": 138,
+    "section": "Section 14.5  Hash Indices",
+    "section_path": "Chapter 14 Section 14.5  Hash Indices",
+    "page_numbers": [
+      157
+    ],
+    "preview": ". 2. With a fudge factor of 0 . 2, about 20 percent of the space in the buckets will be empty. But the benefit is that the probability of overflow is reduced. Despite allocation of a few more buckets than required, bucket overflow can still occur, especially if the number of records increases beyond"
+  },
+  {
+    "chunk_id": 139,
+    "section": "Section 14.6  Multiple-Key Access",
+    "section_path": "Chapter 14 Section 14.6  Multiple-Key Access",
+    "page_numbers": [
+      158
+    ],
+    "preview": "Until now, we have assumed implicitly that only one index on one attribute is used to process a query on a relation. However, for certain types of queries, it is advantageous to use multiple indices if they exist, or to use an index built on a multiattribute search key."
+  },
+  {
+    "chunk_id": 140,
+    "section": "Section 14.6.1 Using Multiple Single-Key Indices",
+    "section_path": "Chapter 14 Section 14.6  Multiple-Key Access Section 14.6.1 Using Multiple Single-Key Indices",
+    "page_numbers": [
+      158,
+      159
+    ],
+    "preview": "Assume that the instructor file has two indices: one for dept\\_name and one for salary. Consider the following query: 'Find all instructors in the Finance department with salary equal to $80,000.' We write select ID from instructor where dept\\_name = 'Finance' and salary = 80000; There are three str"
+  },
+  {
+    "chunk_id": 141,
+    "section": "Section 14.6.2 Indices on Multiple Keys",
+    "section_path": "Chapter 14 Section 14.6  Multiple-Key Access Section 14.6.2 Indices on Multiple Keys",
+    "page_numbers": [
+      159,
+      160,
+      161
+    ],
+    "preview": "An alternative strategy for this case is to create and use an index on a composite search key ( dep\\_name , salary)that is, the search key consisting of the department name concatenated with the instructor salary. We can use an ordered (B + -tree) index on the preceding composite search key to answe"
+  },
+  {
+    "chunk_id": 142,
+    "section": "Section 14.6.2 Indices on Multiple Keys",
+    "section_path": "Chapter 14 Section 14.6  Multiple-Key Access Section 14.6.2 Indices on Multiple Keys",
+    "page_numbers": [
+      161
+    ],
+    "preview": ". However, each record is likely to be in a different disk block, because of the ordering of records in the file, leading to many I/O operations. The difference between this query and the previous two queries is that the condition on the first attribute ( dept\\_name ) is a comparison condition, rath"
+  },
+  {
+    "chunk_id": 143,
+    "section": "Section 14.6.3 Covering Indices",
+    "section_path": "Chapter 14 Section 14.6  Multiple-Key Access Section 14.6.3 Covering Indices",
+    "page_numbers": [
+      161,
+      162
+    ],
+    "preview": "Covering indices are indices that store the values of some attributes (other than the search-key attributes) along with the pointers to the record. Storing extra attribute values is useful with secondary indices, since they allow us to answer some queries using just the index, without even looking u"
+  },
+  {
+    "chunk_id": 144,
+    "section": "Section 14.7  Creation of Indices",
+    "section_path": "Chapter 14 Section 14.7  Creation of Indices",
+    "page_numbers": [
+      162,
+      163
+    ],
+    "preview": "Although the SQL standard does not specify any specific syntax for creation of indices, most databases support SQL commands to create and drop indices. As we saw in Section 4.6, indices can be created using the following syntax, which is supported by most databases. create index &lt; index-name &gt;"
+  },
+  {
+    "chunk_id": 145,
+    "section": "Section 14.7  Creation of Indices",
+    "section_path": "Chapter 14 Section 14.7  Creation of Indices",
+    "page_numbers": [
+      163
+    ],
+    "preview": ". If there were an index on the ID attribute of takes , pointers to the required records could be obtained with only a few I/O operations. Since students typically only take a few tens of courses, even fetching the actual records would take only a few tens of I/O operations subsequently. In contrast"
+  },
+  {
+    "chunk_id": 146,
+    "section": "Section 14.7  Creation of Indices",
+    "section_path": "Chapter 14 Section 14.7  Creation of Indices",
+    "page_numbers": [
+      163,
+      165
+    ],
+    "preview": ". It is therefore important when building an application to figure out which indices are important for performance and to create them before the application goes live. If a relation is declared to have a primary key, most database systems automatically create an index on the primary key. Whenever a "
+  },
+  {
+    "chunk_id": 147,
+    "section": "Section 14.8  Write-Optimized Index Structures",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures",
+    "page_numbers": [
+      165
+    ],
+    "preview": "Page 666 One of the drawbacks of the B + -tree index structure is that performance can be quite poor with random writes. Consider an index that is too large to fit in memory; since the bulk of the space is at the leaf level, and memory sizes are quite large these days, we assume for simplicity that "
+  },
+  {
+    "chunk_id": 148,
+    "section": "Section 14.8.1 LSM Trees",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.1 LSM Trees",
+    "page_numbers": [
+      166,
+      167
+    ],
+    "preview": "An LSM tree consists of several B + -trees, starting with an inmemory tree, called L 0 , and on-disk trees L 1 , L 2 ,..., L k for some k , where k is called the level. Figure 14.26 depicts the structure of an LSM tree for k = 3. Figure 14.26 Log-structured merge tree with three levels. An index loo"
+  },
+  {
+    "chunk_id": 149,
+    "section": "Section 14.8.1 LSM Trees",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.1 LSM Trees",
+    "page_numbers": [
+      167,
+      168
+    ],
+    "preview": ". This gives the following benefits. 1. The leaves of the new tree are sequentially located, avoiding random I/O during subsequent merges. 2. The leaves are full, avoiding the overhead of partially occupied leaves that can occur with page splits. There is, however, a cost to using the LSM structure "
+  },
+  {
+    "chunk_id": 150,
+    "section": "Section 14.8.1 LSM Trees",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.1 LSM Trees",
+    "page_numbers": [
+      168
+    ],
+    "preview": ". Bloom filters occupy very little space, but they are quite effective at reducing query cost. Page 668 Details of all these variants of LSM trees can be found in Section 24.2. So far we have only described inserts and lookups. Deletes are handled in an interesting manner. Instead of directly findin"
+  },
+  {
+    "chunk_id": 151,
+    "section": "Section 14.8.1 LSM Trees",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.1 LSM Trees",
+    "page_numbers": [
+      168,
+      170
+    ],
+    "preview": ". Flash based SSDs have a relatively low overhead for random I/O operations since they do not require seek, and thus the benefit of avoiding random I/O that LSM tree variants provide is not particularly important with SSDs. However, recall that flash memory does not allow in-place update, and writin"
+  },
+  {
+    "chunk_id": 152,
+    "section": "Section 14.8.2 Buffer Tree",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.2 Buffer Tree",
+    "page_numbers": [
+      170,
+      171
+    ],
+    "preview": "Page 669 The buffer tree is an alternative to the log-structured merge tree approach. The key idea behind the buffer tree is to associate a buffer with each internal node of a B + -tree, including the root node; this is depicted pictorially in Figure 14.27. We first outline how inserts and lookups a"
+  },
+  {
+    "chunk_id": 153,
+    "section": "Section 14.8.2 Buffer Tree",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.2 Buffer Tree",
+    "page_numbers": [
+      171,
+      172
+    ],
+    "preview": ". Range lookups are done as in a normal B + -tree, but they must also examine the buffers of all internal nodes above any of the leaf nodes that are accessed. Suppose the buffer at an internal node holds k times as many records as there are child nodes. Then, on average, k records would be pushed do"
+  },
+  {
+    "chunk_id": 154,
+    "section": "Section 14.8.2 Buffer Tree",
+    "section_path": "Chapter 14 Section 14.8  Write-Optimized Index Structures Section 14.8.2 Buffer Tree",
+    "page_numbers": [
+      172
+    ],
+    "preview": ". However, since random I/O operations are very efficient on SSDs, and buffer trees tend to perform fewer write operations overall compared to LSM trees, buffer trees can provide better write performance on SSDs. Several index structures designed for flash storage make use of the buffer concept intr"
+  },
+  {
+    "chunk_id": 155,
+    "section": "Section 14.9  Bitmap Indices",
+    "section_path": "Chapter 14 Section 14.9  Bitmap Indices",
+    "page_numbers": [
+      172,
+      173,
+      174
+    ],
+    "preview": "Bitmap indices are a specialized type of index designed for easy querying on multiple keys, although each bitmap index is built on a single key. We describe key features of bitmap indices in this section but provide further details in Section 24.3.  For bitmap indices to be used, records in a relati"
+  },
+  {
+    "chunk_id": 156,
+    "section": "Section 14.9  Bitmap Indices",
+    "section_path": "Chapter 14 Section 14.9  Bitmap Indices",
+    "page_numbers": [
+      174,
+      175
+    ],
+    "preview": ". The  Page 671 i th bit of the bitmap for value v j is set to 1 if the record numbered i has the value v j for attribute A . All other bits of the bitmap are set to 0. In our example, there is one bitmap for the value m and one for f. The i th bit of the bitmap for m is set to 1 if the gender value"
+  },
+  {
+    "chunk_id": 157,
+    "section": "Section 14.9  Bitmap Indices",
+    "section_path": "Chapter 14 Section 14.9  Bitmap Indices",
+    "page_numbers": [
+      175
+    ],
+    "preview": ". In other words, we compute a new bitmap where bit i has value 1 if the i th bit of the two bitmaps are both 1, and has  Page 672 a value 0 otherwise. In the example in Figure 14.28, the intersection of the bitmap for gender = f (01101) and the bitmap for income\\_level = L 2 (01000) gives the bitma"
+  },
+  {
+    "chunk_id": 158,
+    "section": "Section 14.10  Indexing of Spatial and Temporal Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data",
+    "page_numbers": [
+      175
+    ],
+    "preview": "Traditional index structures, such as hash indices and B + trees, are not suitable for indexing of spatial data, which are typically of two or more dimensions. Similarly, when tuples have temporal intervals associated with them, and queries may specify time points or time intervals, the traditional "
+  },
+  {
+    "chunk_id": 159,
+    "section": "Section 14.10.1 Indexing of Spatial Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.1 Indexing of Spatial Data",
+    "page_numbers": [
+      175,
+      176
+    ],
+    "preview": "In this section we provide an overview of techniques for indexing spatial data. Further details can be found in Section 24.4. Spatial data refers to data referring to a point or a region in two or higher dimensional space. For example, the location of restaurants, identified by a (latitude, longitud"
+  },
+  {
+    "chunk_id": 160,
+    "section": "Section 14.10.1 Indexing of Spatial Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.1 Indexing of Spatial Data",
+    "page_numbers": [
+      176,
+      177,
+      178
+    ],
+    "preview": ". Tree structures, such as binary trees and B + -trees, operate by successively dividing space into smaller parts. For instance, each internal node of a binary tree partitions a one-dimensional interval in two. Points that lie in the left partition go into the left subtree; points that lie in the ri"
+  },
+  {
+    "chunk_id": 161,
+    "section": "Section 14.10.1 Indexing of Spatial Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.1 Indexing of Spatial Data",
+    "page_numbers": [
+      178,
+      179
+    ],
+    "preview": ". Figure 14.29 Division of space by a k-d tree.  Page 674 Rectangular range queries, which ask for points within a specified rectangular region, can be answered efficiently using a k-d tree as follows: Such a query essentially specifies an interval on each dimension. For example, a range query may a"
+  },
+  {
+    "chunk_id": 162,
+    "section": "Section 14.10.1 Indexing of Spatial Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.1 Indexing of Spatial Data",
+    "page_numbers": [
+      179
+    ],
+    "preview": ". There are a number of alternative index structures for spatial data. Instead of dividing the data one dimension at a  Page 675 time, quadtrees divide up a two-dimensional space into four quadrants at each node of the tree. Details may be found in Section 24.4.1. Indexing of regions of space, such "
+  },
+  {
+    "chunk_id": 163,
+    "section": "Section 14.10.1 Indexing of Spatial Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.1 Indexing of Spatial Data",
+    "page_numbers": [
+      179,
+      180
+    ],
+    "preview": ". Each leaf node stores the indexed objects. Figure 14.30 shows an example of a set of rectangles (drawn with a solid line) and the bounding boxes (drawn with a dashed line) of the nodes of an R-tree for the set of rectangles. Note that the bounding boxes are shown with extra space inside them, to m"
+  },
+  {
+    "chunk_id": 164,
+    "section": "Section 14.10.2 Indexing Temporal Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.2 Indexing Temporal Data",
+    "page_numbers": [
+      180,
+      181
+    ],
+    "preview": "Temporal data refers to data that has an associated time period, as discussed in Section 7.10. The time period  Page 676 associated with a tuple indicates the period of time for which the tuple is valid. For example, a particular course identifier may have its title changed at some point of time. Th"
+  },
+  {
+    "chunk_id": 165,
+    "section": "Section 14.10.2 Indexing Temporal Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.2 Indexing Temporal Data",
+    "page_numbers": [
+      181,
+      182
+    ],
+    "preview": ". We shall therefore only consider time intervals when modeling temporal data. Suppose we wish to retrieve the value of a tuple, given a value v for an attribute a , and a point in time t 1 . We can create an index on the a , and use it to retrieve all tuples with value v for attribute a . While suc"
+  },
+  {
+    "chunk_id": 166,
+    "section": "Section 14.10.2 Indexing Temporal Data",
+    "section_path": "Chapter 14 Section 14.10  Indexing of Spatial and Temporal Data Section 14.10.2 Indexing Temporal Data",
+    "page_numbers": [
+      182,
+      183
+    ],
+    "preview": ". - Lookups for a key value v at a point in time t i would need to search on both indices; the search on the current-tuple index would be for tuples with a = v , and start\\_ts ≤ t i , which can be done by a simple range query. Queries with a time range can be handled similarly. Instead of using spat"
+  }
+]
